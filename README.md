@@ -2,11 +2,17 @@
 
 This repository contains the source-files of the developer documentation of the GROW Services.
 
+The most recently published version of this document will be made available through
+
+[http://developer.grow-services.net/](http://developer.grow-services.net/)
+
 ## Chapters
 
-* Introduction
-* ...
-
+* [Introduction](src/introduction.md)
+* [Service](src/service.md)
+* [Data-items](src/dataitems.md)
+* [Methods](src/methods.md)
+* [Workflows](src/workflows.md)
 
 ## Building
 
