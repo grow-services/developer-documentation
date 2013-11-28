@@ -2,12 +2,12 @@
 
 This section of the document describes the available methods in the API. This information is valid regardless of the protocol used (REST, XML, SOAP, etc)
 
-* registerPregnancy()
-* addMeasurement()
-* getPdf()
-* getChartImage()
-* getData()
-* registerBirth()
+* `registerPregnancy`
+* `addMeasurement`
+* `getPdf`
+* `getChartImage`
+* `getData`
+* `registerBirth`
 
 ## registerPregnancy
 
@@ -17,9 +17,9 @@ If the MIS can generate a unique reference for this pregnancy, it can be passed 
 
 If the MIS does not provide a unique reference, you can leave the `growchartid` field empty. The service will generate a unique id, and return it in the response for the MIS to store for future methods.
 
-The growchartversion identifies the set of co-efficients used for this pregnancy, i.e. UK2013, NL2012 or NL2013. The field is optional, and if omitted uses the default `current` growchartversion for the country of the caller. It is recommended to omit this field, and let the service automatically select the current growversion. The field is only intended for re-creating legacy charts.
+The growchartversion identifies the set of co-efficients used for this pregnancy, i.e. `UK2013`, `NL2012` or `NL2013`. The field is optional, and if omitted uses the default *current* growchartversion for the country of the caller. It is recommended to omit this field, and let the service automatically select the current growversion. The field is only intended for re-creating legacy charts.
 
-The ethnicity is specified in the scope of the growchartversion.
+The `ethnicity` is specified in the scope of the growchartversion.
 
 For any given license owner and reference combination, the API will return the same `growchartid`. In other words, the pregnancy is only registered once. If the `growchartid` got lost, it can be retrieved by calling this method again.
 
@@ -27,8 +27,8 @@ If any changes are made to the data items that help produce the customised growt
 
 ### Input:
 
-* `apikey` (see section ‘api keys’)
-* `token` (see section ‘api keys’)
+* `apikey`: (see section ‘api keys’)
+* `token`: (see section ‘api keys’)
 * `growchartid` (optional)
 * `growchartversion` (optional)
 * `maternalheight`
@@ -51,14 +51,16 @@ This method is used in combination with `registerPregnancy` when the application
 
 ### Input
 
-`growchartid`
-`requestdate`
+* `apikey`: (see section ‘api keys’)
+* `token`: (see section ‘api keys’)
+* `growchartid`
+* `requestdate`
 
 ### Output:
 
-`growchartversion`
-`bmi`
-`tow`
+* `growchartversion`
+* `bmi`
+* `tow`
 
 ## getPdf
 
@@ -66,8 +68,8 @@ This method is used by the application to generate a printable version of the cu
 
 ### Input (in addition to registerPregnancy input fields)
 
-* `apikey` (see section ‘api keys’)
-* `token` (see section ‘api keys’)
+* `apikey`: (see section ‘api keys’)
+* `token`: (see section ‘api keys’)
 * `firstname`
 * `surname`
 * `maternaldob`
@@ -89,8 +91,8 @@ The `firstname`, `lastname`, `maternaldob` fields is personally identifiable dat
 
 ### Input:
 
-* `apikey` (see section ‘api keys’)
-* `token` (see section ‘api keys’)
+* `apikey`: (see section ‘api keys’)
+* `token`: (see section ‘api keys’)
 * `growchartid`
 * `width`: Range: 320px - 1024px
 * `height`: Range: 240px - 768px
@@ -111,8 +113,8 @@ This method is used in combination with `registerPregnancy` and `getData` when a
 
 ### Input:
 
-* `apikey` (see section ‘api keys’)
-* `token` (see section ‘api keys’)
+* `apikey`: (see section ‘api keys’)
+* `token`: (see section ‘api keys’)
 * `growchartid`
 * `babydob`
 * `birthgestation`
@@ -132,8 +134,8 @@ The MIS uses this method to add measurements to the chart. If plotting is enable
 
 ### Input:
 
-* `apikey` (see section ‘api keys’)
-* `token` (see section ‘api keys’)
+* `apikey`: (see section ‘api keys’)
+* `token`: (see section ‘api keys’)
 * `growchartid`
 * `date`: Format: YYYYMMDD
 * `type`: `efw`, `fundalheight`, `birthweight`
