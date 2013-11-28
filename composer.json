@@ -1,0 +1,17 @@
+{
+    "name": "grow-services/developer-documentation",
+    "description": "Developer documentation GROW-Services",
+    "homepage": "http://www.github.com/grow-services/developer-documentation",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Joost Faassen",
+            "email": "j.faassen@grow-services.net",
+            "role": "Scripting"
+        }
+    ],
+    "require": {
+        "php": ">=5.0.0",
+        "dflydev/markdown": "1.0.*@dev"
+    }
+}

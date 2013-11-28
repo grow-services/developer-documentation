@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Developer documentation GROW Services"  default="help" basedir=".">
+    
+    <property name="buildroot" value="${basedir}/build" />
+    <property name="wkhtmltopdf" value="/Applications/wkhtmltopdf.app/Contents/MacOS/wkhtmltopdf" />
+
+    <target name="help" description="Explain build script options">
+        <echo message="=== Documentation build script ===" />
+        <echo message="basedir: '${basedir}'" />
+        <echo message="buildroot: '${buildroot}'" />	
+        <exec executable="ant">
+            <arg value="-p" />
+        </exec>
+    </target>
+
+    <target name="prepare" description="Prepare build directories">
+        <mkdir dir="${buildroot}" />
+        <mkdir dir="${buildroot}/html" />
+        <mkdir dir="${buildroot}/pdf" />        
+    </target>
+
+
+    <target name="publish" depends="prepare" description="Publish documentation">
+
+        <copy todir="${buildroot}/html/assets/">
+            <fileset dir="src/assets/"/>
+            <fileset dir="template/assets/"/>
+            <fileset dir="template/html/assets/"/>
+        </copy>
+
+        <copy todir="${buildroot}/pdf/assets/">
+            <fileset dir="src/assets/"/>
+            <fileset dir="template/assets/"/>
+            <fileset dir="template/pdf/assets/"/>
+        </copy>
+
+
+        <exec executable="bin/publish">
+        </exec>
+
+         <exec executable="${wkhtmltopdf}">
+            <arg value="${buildroot}/pdf/index.html"/>
+            <arg value="${buildroot}/pdf/grow-services-developer-documentation.pdf"/>
+        </exec>
+    </target>
+
+</project>

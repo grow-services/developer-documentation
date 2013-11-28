@@ -1,0 +1,44 @@
+#!/usr/bin/env php
+<?php
+
+use dflydev\markdown\MarkdownParser;
+
+require_once(__DIR__ . "/../vendor/autoload.php");
+
+$basedir = __DIR__ . '/..';
+$builddir = $basedir . '/build';
+
+// Sanity checks
+if (!file_exists($basedir)) {
+    throw new RuntimeException('basedir not found');
+}
+
+if (!file_exists($basedir)) {
+    throw new RuntimeException('builddir not found');
+}
+
+// Generate concattenated content
+$content = '';
+$content .= file_get_contents($basedir . '/src/introduction.md');
+$content .= file_get_contents($basedir . '/src/service.md');
+$content .= file_get_contents($basedir . '/src/dataitems.md');
+$content .= file_get_contents($basedir . '/src/methods.md');
+$content .= file_get_contents($basedir . '/src/workflows.md');
+$content .= file_get_contents($basedir . '/src/examples-xml.md');
+
+file_put_contents($builddir . '/content.md', $content);
+
+// Transform markup to html
+$markdownParser = new MarkdownParser();
+$content = $markdownParser->transformMarkdown($content);
+file_put_contents($builddir . '/content.html', $content);
+
+// Wrap HTML template
+$template = file_get_contents($basedir . '/template/html/index.html');
+file_put_contents($builddir . '/html/index.html', str_replace('{{CONTENT}}', $content, $template));
+
+// Wrap PDF template
+$template = file_get_contents($basedir . '/template/pdf/index.html');
+file_put_contents($builddir . '/pdf/index.html', str_replace('{{CONTENT}}', $content, $template));
+
+exit(0);
