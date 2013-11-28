@@ -16,13 +16,15 @@ The most recently published version of this document will be made available thro
 
 ## Building
 
+You can build and publish these source-files into PDF and HTML deliverables yourself, by following these steps:
+
 ### Acquiring the source-files
 
-1) Checkout this repository to your local machine:
+1. Checkout this repository to your local machine:
 
     git checkout git@github.com:grow-services/developer-documentation.git
 
-2) Enter the repository:
+2. Enter the repository:
 
     cd developer-documentation
 
