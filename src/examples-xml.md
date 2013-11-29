@@ -63,7 +63,20 @@
 
 ### Output:
 
-Image file in requested format.
+    <growchart>
+        <growchartid>0000001</growchartid>
+        <growversion>NL2012</growversion>
+        <width>750</width>
+        <height>450</height>
+        <language>en_UK</language>
+        <format>png</format>
+        <firstname>Luo</firstname>
+        <lastname>Weimeng</lastname>
+        <maternaldob>19870222</maternaldob>
+        <url>
+            http://www.grow-services.net/api/grow/getchartimage/?licensekey=mylicensekey&.....&format=png
+        </url>
+    </growchart>
 
 ## getData
 

@@ -71,3 +71,7 @@ Parameters are passed in structured XML fragments. Please refer to the "examples
 ### SOAP API (near future)
 
 This API allows you to interact with the service through a SOAP interface. A WSDL will be published once it's ready.
+
+    Endpoint:
+        WSDL  https://www.grow-services.net/api/grow/soap/?wsdl
+        Server https://www.grow-services.net/api/grow/soap/
