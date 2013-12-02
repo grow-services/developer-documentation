@@ -107,6 +107,7 @@
         <apikey>demoapi</apikey>
         <token>demotoken</token>
         <growchartid>00001</growchartid>
+        <requestdate>20131130</requestdate><!-- Optional, if not set use the request date-->
     </datacentile>
 
 ### Output:
