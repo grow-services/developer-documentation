@@ -100,6 +100,14 @@
 ### URI
     
     /api/grow/xml/getdata/?licensekey=myapikey&token=demotoken&growchartid=0000001
+    
+### Input:
+
+    <datacentile>
+        <apikey>demoapi</apikey>
+        <token>demotoken</token>
+        <growchartid>00001</growchartid>
+    </datacentile>
 
 ### Output:
 
