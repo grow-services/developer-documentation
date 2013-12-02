@@ -5,10 +5,10 @@ The following data items are used by this service:
 ## Input pregnancy data (registerPregnancy)
 
 * **growchartid**: [optional] Unique ID for a chart / pregnancy
-* **growversion**: [optional] GROW version of co-efficients
+* **growchartversion**: [optional] GROW version of co-efficients
 * **maternalheight**: Maternal height (at booking/dating scan)
 * **maternalweight**: Maternal weight (at booking/dating scan)
-* **ethnicity**: Ethnicity code in the scope of the `growversion`
+* **ethnicity**: Ethnicity code in the scope of the `growchartversion`
 * **parity**: Parity (at booking/dating scan)
 * **edd**: EDD (at booking/dating scan)
 * **requestdate**: [optional] Current date for calculations. If left blank, today’s date is used. (at booking/dating scan so gestation can be calculated)
