@@ -1,5 +1,10 @@
 # XML POST examples
 
+**The `licensekey` and `token` can be passed attatched to the url or the request body node.**
+
+    <licensekey>myapikey</licensekey>
+    <token>demotoken</token>
+
 ## registerPregnancy
 
 ### URI
