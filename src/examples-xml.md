@@ -2,6 +2,10 @@
 
 ## registerPregnancy
 
+### URI
+    
+    /api/grow/xml/registerpregnancy/?licensekey=myapikey&token=demotoken&growchartid=0000001
+
 ### Input
 
     <pregnancy>
@@ -25,6 +29,10 @@
 
 ## addMeasurement
 
+### URI
+    
+    /api/grow/xml/addmeasurement/?licensekey=myapikey&token=demotoken
+
 ### Input
 
     <measurements growchartid="0000001">
@@ -47,6 +55,10 @@
     </measurements>
 
 ## getChartImage
+
+### URI
+    
+    /api/grow/xml/getchartimage/?licensekey=myapikey&token=demotoken
 
 ### Input:
 
@@ -74,13 +86,15 @@
         <lastname>Weimeng</lastname>
         <maternaldob>19870222</maternaldob>
         <url>
-            http://www.grow-services.net/api/grow/getchartimage/?licensekey=mylicensekey&.....&format=png
+            http://www.grow-services.net/api/grow/getchartimage/?licensekey=myapikey&.....&format=png
         </url>
     </growchart>
 
 ## getData
 
-### Input:
+### URI
+    
+    /api/grow/xml/getdata/?licensekey=myapikey&token=demotoken&growchartid=0000001
 
 ### Output:
 
@@ -92,6 +106,11 @@
 
 
 ## registerBirth
+
+### URI
+    
+    /api/grow/xml/registerbirth/?licensekey=myapikey&token=demotoken
+
 
 ### Input:
 
