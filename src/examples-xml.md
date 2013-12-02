@@ -99,14 +99,14 @@
 
 ### URI
     
-    /api/grow/xml/getdata/?licensekey=myapikey&token=demotoken&growchartid=0000001
+    /api/grow/xml/getdata/[?licensekey=myapikey&token=demotoken&growchartid=0000001]
     
 ### Input:
 
     <datacentile>
-        <apikey>demoapi</apikey>
+        <licensekey>myapikey</licensekey>
         <token>demotoken</token>
-        <growchartid>00001</growchartid>
+        <growchartid>0000001</growchartid>
         <requestdate>20131130</requestdate><!-- Optional, if not set use the request date-->
     </datacentile>
 
