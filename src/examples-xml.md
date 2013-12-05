@@ -91,7 +91,7 @@
         <lastname>Weimeng</lastname>
         <maternaldob>19870222</maternaldob>
         <url>
-            http://www.grow-services.net/api/grow/getchartimage/?licensekey=myapikey&.....&format=png
+            https://www.grow-services.net/api/grow/getchartimage/?licensekey=myapikey&.....&format=png
         </url>
     </growchart>
 
@@ -136,3 +136,36 @@
         <babygender>F</babygender><!--F or M-->
         <antenataliugrdetection>Y</antenataliugrdetection><!-- Y or N -->
     </birth>
+
+## get pdf
+
+### URI
+
+### Input:
+
+    <growchart>
+       <growchartid>0000661</growchartid>
+       <growversion>NL2013</growversion>
+       <firstname>Luo</firstname>
+       <lastname>Weimeng</lastname>
+       <babyname>xiaocong</babyname>
+       <babygender>M</babygender>
+       <babygestation>40</babygestation>
+       <babybirthweight>3500</babybirthweight>
+    </growchart>
+
+### Output:
+
+    <growchart>
+        <growchartid>0000661</growchartid>
+        <growversion>NL2013</growversion>
+        <language>en_UK</language>
+        <firstname>Luo</firstname>
+        <lastname>Weimeng</lastname>
+        <maternaldob />
+        <babyname>xiaocong</babyname>
+        <babygender>M</babygender>
+        <babygestation>40</babygestation>
+        <babybirthweight>3500</babybirthweight>
+        <url>https://www.grow-services.net/api/grow/getchartimage/?licensekey=myapikey.....</url>
+    </growchart>
