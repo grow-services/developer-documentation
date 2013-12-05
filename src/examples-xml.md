@@ -141,6 +141,8 @@
 
 ### URI
 
+    /api/grow/xml/getpdf/?licensekey=myapikey&token=demotoken
+    
 ### Input:
 
     <pdf>
