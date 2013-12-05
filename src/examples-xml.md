@@ -143,7 +143,7 @@
 
 ### Input:
 
-    <growchart>
+    <pdf>
        <growchartid>0000661</growchartid>
        <growversion>NL2013</growversion>
        <firstname>Luo</firstname>
@@ -152,7 +152,7 @@
        <babygender>M</babygender>
        <babygestation>40</babygestation>
        <babybirthweight>3500</babybirthweight>
-    </growchart>
+    </pdf>
 
 ### Output:
 
