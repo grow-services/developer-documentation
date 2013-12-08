@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doxedo>
+    <name>grow-services-documentation</name>
+    
+    <title>GROW-Services.net documentation</title>
+
+    <topic href="introduction.md" />
+    <topic href="service.md" />
+    <topic href="dataitems.md" />
+    <topic href="methods.md" />
+    <topic href="workflows.md" />
+    <topic href="examples-xml.md" />
+
+    <variable key="skinpath">../template/html/</variable> 
+
+    <language name="src">
+        <target
+            name="pdffull"
+            >
+        </target>
+    </language>
+</doxedo>
