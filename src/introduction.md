@@ -26,3 +26,22 @@ However, as part of the new Growth Assessment Protocols (GAP) programme, the sof
 The GROW API will produce the customised growth charts and birth weight centiles as part of the routine data entry for clinicians, reducing the need for double entry of data. The web service will support data collection and reporting of IUGR rates and antenatal detection rates and where required, automated plotting of fundal height and estimated fetal weight measurements. This will eliminate human error in plotting.
 
 Phase two development will include informing the end user of abnormal plots (i.e. static, slow or accelerated growth) in order to trigger appropriate referral for further investigation.
+
+## Versioning and further information
+
+The latest version of this document, and further developer information is available from the following website: 
+
+* [http://developer.grow-services.net/](http://developer.grow-services.net/)
+
+This document itself is managed as an open source project on Github. Improvements, extensions and corrections are encouraged. We welcome forks and pull-requests on the following project url:
+
+* [http://github.com/grow-services/developer-documentation](http://github.com/grow-services/developer-documentation)
+
+
+## Legal
+
+This documentation is (c)2013 M Account BV and licensed under the CC BY-SA 3.0 license:
+
+* [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/)
+
+
