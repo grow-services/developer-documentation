@@ -12,7 +12,7 @@ The key and secret serve 2 purposes:
 Each request to any of the APIs contains:
 
 1. The `api key`
-2. The token: A sha1 hash of the `api key` + `api secret`
+2. The `token`: A sha1 hash of the `api key` + `api secret`
 
 ### Example:
 
@@ -50,7 +50,7 @@ This is simple API where parameters are submitted as HTTP GET and/or POST variab
 
 Endpoint:
 
-    https://www.grow-services.net/api/grow/rest/
+* [https://www.grow-services.net/api/grow/rest/](https://www.grow-services.net/api/grow/rest/)
 
 The url is post-fixed with the methodname in all lowercase and a final slash.
 
@@ -62,16 +62,18 @@ This is simple API where parameters are submitted in structured XML fragments.
 
 Endpoint:
 
-    https://www.grow-services.net/api/grow/xml/
+* [https://www.grow-services.net/api/grow/xml/](https://www.grow-services.net/api/grow/xml/)
 
 The url is post-fixed with the methodname in all lowercase and a final slash.
 
 Parameters are passed in structured XML fragments. Please refer to the "examples" section for XML examples.
 
-### SOAP API (near future)
+### SOAP API
 
-This API allows you to interact with the service through a SOAP interface. A WSDL will be published once it's ready.
+This API allows you to interact with the service through a SOAP interface. A WSDL is included.
 
-    Endpoint:
-        WSDL  https://www.grow-services.net/api/grow/soap/?wsdl
-        Server https://www.grow-services.net/api/grow/soap/
+Endpoint:
+
+* WSDL: [https://www.grow-services.net/api/grow/soap/?wsdl](https://www.grow-services.net/api/grow/soap/?wsdl)
+* Service: [https://www.grow-services.net/api/grow/soap/](https://www.grow-services.net/api/grow/soap/)
+

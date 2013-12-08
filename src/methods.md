@@ -81,7 +81,7 @@ This method is used by the application to generate a printable version of the cu
 
 ### Output:
 
-* PDF file, containing customised growth chart image and referral criteria document
+* `URL` url containing a generated PDF file. The PDF contains a customised growth chart image and referral criteria document
 
 ## getChartImage
 
@@ -105,7 +105,7 @@ The `firstname`, `lastname`, `maternaldob` fields is personally identifiable dat
 
 ### Output:
 
-The image file will be returned as-is in PNG format
+* `url`: URL containing a generated PNG file. The PNG contains a customised growth chart image
 
 ## registerBirth
 
