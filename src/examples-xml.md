@@ -76,6 +76,7 @@
         <firstname>Luo</firstname><!-- optional -->
         <lastname>Weimeng</lastname><!-- optional -->
         <maternaldob>19870222</maternaldob><!-- optional -->
+        <reference>1234556</reference>
     </chart>
 
 ### Output:
@@ -131,7 +132,8 @@
     <birth>
         <growchartid>0000001</growchartid>
         <babydob>20140115</babydob>
-        <birthgestation>20140115</birthgestation>
+        <firstname>Lucky</firstname>
+        <birthgestation>39.5</birthgestation>
         <birthweight>3500</birthweight><!-- gram -->
         <babygender>F</babygender><!--F or M-->
         <antenataliugrdetection>Y</antenataliugrdetection><!-- Y or N -->
@@ -154,6 +156,7 @@
        <babygender>M</babygender>
        <babygestation>40</babygestation>
        <babybirthweight>3500</babybirthweight>
+       <reference>1234556</reference>
     </pdf>
 
 ### Output:
