@@ -118,6 +118,7 @@ This method is used in combination with `registerPregnancy` to register birth de
 * `growchartid`
 * `babydob`
 * `babygender`
+* `babyweight`
 * `antenataliugrdetection`
 
 ### Output:
