@@ -109,7 +109,7 @@ The `firstname`, `lastname`, `maternaldob` fields is personally identifiable dat
 
 ## registerBirth
 
-This method is used in combination with `registerPregnancy` and `getData` when a customised birthweight centile is required. It uses previously saved data items and specific birth data on the baby to generate a birthweight centile for the pregnancy and discards any patient identifiable data at this time.
+This method is used in combination with `registerPregnancy` to register birth details of the pregnancy related to the requested `growchartid`. It is used to determine a customised birthweight centile, and keep track of antenataliugrdetection rates.
 
 ### Input:
 
@@ -117,16 +117,32 @@ This method is used in combination with `registerPregnancy` and `getData` when a
 * `token`: (see section ‘api keys’)
 * `growchartid`
 * `babydob`
-* `birthgestation`
+* `babygender`
+* `antenataliugrdetection`
+
+### Output:
+
+* nothing
+
+## registerBaby
+
+This method is used in combination with `registerPregnancy` to register previous baby details, related to the requested `growchartid`. Note that it should explicitly exclude the baby details of the current pregnancy. Those details should be sent through the `registerBirth` method. These previous baby details will be embedded in the image returned by `getChartImage`.
+
+### Input:
+
+* `apikey`: (see section ‘api keys’)
+* `token`: (see section ‘api keys’)
+* `growchartid`
+* `babynr`
+* `babydob`
+* `babygestation`
 * `birthweight`
 * `babygender`
 * `antenataliugrdetection`
 
-NB EDD is removed if the call is successful and a gestation is derived, to ensure potentially identifiable data is discarded. Baby DOB is also not stored for this reason. However, month of birth is stored to enable accurate reporting of IUGR rates and detection rates.
-
 ### Output:
 
-* `custombirthweightcentile` (numeric and plot on image where requested)
+* nothing
 
 ## addMeasurement
 
