@@ -114,9 +114,10 @@
 ### Output:
 
     <datacentile>
-        <growchartversion>NL2012</growchartversion>
-        <tow>3571.235</tow>
-        <bmi>24.32</bmi>
+        <growchartversion>NL2013</growchartversion>
+        <tow>3596</tow>
+        <bmi>24.24</bmi>
+        <custombirthweightcentile>0</custombirthweightcentile>
     </datacentile>
 
 
