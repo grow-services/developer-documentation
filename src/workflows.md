@@ -19,7 +19,7 @@
 ## Previous children's birthweight centiles
 
 1. User enters previous baby details as part of routine care at booking and clicks on "Get centile" button 
-2. MIS calls `registerBirth` and sends data items - `apikey`, `token`, `growchartid`, `birthorder`, `babyname`, `babygender`, `babygestation`, `babybirthweight`; to web service and returns the `babybirthcentile`.
+2. MIS calls `registerBaby` and sends data items - `apikey`, `token`, `growchartid`, `babynr`, `babydob`, `birthgestation`, `birthweight`, `babygender`, `babyname`, `previousgrowchartid` to web service.
 3. No data is saved in the web service
 
 
