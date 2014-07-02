@@ -224,3 +224,30 @@
     <cleardata>
         <growchartid>0000021</growchartid>
     </cleardata>
+
+## get pregnancy
+
+### URI
+
+    /api/grow/xml/getpregnancy/0000021
+    
+### Output:
+    
+    <growchart>
+        <growchartid>0000014</growchartid>
+        <growversion>NL2013</growversion>
+        <language>en_UK</language>
+        <format>png</format>
+        <display_p95_line>false</display_p95_line>
+        <grid_line_by_weight>false</grid_line_by_weight>
+        <gray_scale>false</gray_scale>
+        <babygender>M</babygender>
+        <babybirthweight>4000</babybirthweight>
+        <maternalheight>165</maternalheight>
+        <maternalweight>60</maternalweight>
+        <ethnicity>12</ethnicity>
+        <edd>1395381715</edd>
+        <babydob>1395381715</babydob>
+        <antenataliugrdetection>N</antenataliugrdetection>
+    </growchart>
+    

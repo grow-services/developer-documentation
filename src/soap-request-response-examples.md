@@ -414,3 +414,60 @@ https://www.grow-services.net/api/grow/soap/?wsdl
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
+
+
+### Get pregnancy
+
+* Request
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="https://www.grow-services.net/api/grow/soap/">
+   <soapenv:Header>
+      <soap:authenticate>
+         <licensekey>apikey</licensekey>
+         <token>apitoken</token>
+      </soap:authenticate>
+   </soapenv:Header>
+   <soapenv:Body>
+      <soap:getpregnancy>
+         <growchartid>0000021</growchartid>
+      </soap:getpregnancy>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+* Response
+
+```xml
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.grow-services.net/api/grow/soap/">
+   <SOAP-ENV:Header>
+      <authenticate>
+         <item>
+            <key>authenticateResult</key>
+            <value>Authenticate passed</value>
+         </item>
+      </authenticate>
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns1:getChartImageResponse>
+         <getChartImageResult>
+            <growchartid>0000014</growchartid>
+            <growversion>NL2013</growversion>
+            <language>en_UK</language>
+            <format>png</format>
+            <display_p95_line>false</display_p95_line>
+            <grid_line_by_weight>false</grid_line_by_weight>
+            <gray_scale>false</gray_scale>
+            <babygender>M</babygender>
+            <babybirthweight>4000</babybirthweight>
+            <maternalheight>165</maternalheight>
+            <maternalweight>60</maternalweight>
+            <ethnicity>12</ethnicity>
+            <edd>1395381715</edd>
+            <babydob>1395381715</babydob>
+            <antenataliugrdetection>N</antenataliugrdetection>
+         </getChartImageResult>
+      </ns1:getChartImageResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+```
