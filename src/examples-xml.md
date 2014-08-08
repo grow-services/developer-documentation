@@ -1,5 +1,6 @@
 # XML POST examples
 
+
 **The `licensekey` and `token` can be passed attatched to the url or the request body node.**
 
 ```xml
@@ -96,6 +97,35 @@ When the gorw version is NL2012
         ...
     </measurements>
 ```
+
+## Remove measurement
+
+### URI
+
+    /api/grow/xml/pregnancy/{growchartid}/measurement/{measurementuuid}?licensekey=myapikey&token=demotoken
+
+### Method: DELETE
+
+## Update measurement
+
+### URI
+
+    /api/grow/xml/pregnancy/{growchartid}/measurement/{measurementuuid}?licensekey=myapikey&token=demotoken
+   
+### Method: PUT
+
+### Input
+
+```xml
+    <measurements>
+        <measurement>
+            <type>birthweight</type>
+            <date>20121011</date>
+            <value>2600</value>
+        </measurement>
+    </measurements>
+```
+
 ## getChartImage
 
 ### URI
