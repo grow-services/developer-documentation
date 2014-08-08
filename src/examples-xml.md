@@ -2,8 +2,10 @@
 
 **The `licensekey` and `token` can be passed attatched to the url or the request body node.**
 
-    <licensekey>myapikey</licensekey>
-    <token>demotoken</token>
+```xml
+<licensekey>myapikey</licensekey>
+<token>demotoken</token>
+```
 
 ## registerPregnancy
 
@@ -12,7 +14,7 @@
     /api/grow/xml/registerpregnancy/?licensekey=myapikey&token=demotoken&growchartid=0000001
 
 ### Input
-
+```xml
     <pregnancy>
         <!-- growchartid is optional -->
         <growchartid>0000001</growchartid>
@@ -24,7 +26,7 @@
         <growversion>NL2013</growchartversion> 
         <requestdate>20131125</requestdate>
     </pregnancy>
-
+```
 #### The ethnicity 
 
 When the grow version is NL2013 and NL2013B
@@ -55,7 +57,7 @@ When the gorw version is NL2012
     [7] => Surinamese-Other
 
 ### Output
-
+```xml
     <growchart>
         <growchartid>0000001</growchartid>
         <growversion>NL2013</growversion>
@@ -65,6 +67,7 @@ When the gorw version is NL2012
         <grid_line_by_weight>false</grid_line_by_weight>
         <gray_scale>false</gray_scale>
     </growchart>
+```
 
 ## addMeasurement
 
@@ -73,7 +76,7 @@ When the gorw version is NL2012
     /api/grow/xml/addmeasurement/?licensekey=myapikey&token=demotoken
 
 ### Input
-
+```xml
     <measurements growchartid="0000001">
         <measurement>
             <type>birthweight</type>
@@ -92,7 +95,7 @@ When the gorw version is NL2012
         </measurement>
         ...
     </measurements>
-
+```
 ## getChartImage
 
 ### URI
@@ -100,7 +103,7 @@ When the gorw version is NL2012
     /api/grow/xml/getchartimage/?licensekey=myapikey&token=demotoken
 
 ### Input:
-
+```xml
     <chart growchartid="0000001">
         <growchartid>0000001</growchartid>
         <reference>0000001</reference>
@@ -114,9 +117,10 @@ When the gorw version is NL2012
         <gridlinebyweight>false</gridlinebyweight>
         <grayscale>false</grayscale>
     </chart>
+```
 
 ### Output:
-
+```xml
     <growchart>
         <growchartid>0000001</growchartid>
         <growversion>NL2013</growversion>
@@ -135,6 +139,7 @@ When the gorw version is NL2012
             <![CDATA[https://www.grow-services.net/api/grow/getchartimage/?licensekey=myapikey&.....&format=png]]>
         </url>
     </growchart>
+```
 
 ## getData
 
@@ -143,7 +148,7 @@ When the gorw version is NL2012
     /api/grow/xml/getdata/[?licensekey=myapikey&token=demotoken&growchartid=0000001]
     
 ### Input:
-
+```xml
     <datacentile>
         <licensekey>myapikey</licensekey>
         <token>demotoken</token>
@@ -151,16 +156,18 @@ When the gorw version is NL2012
         <weight>60</weight>
         <requestdate>20131130</requestdate><!-- Optional, if not set use the request date-->
     </datacentile>
+```
 
 ### Output:
 
+```xml
     <datacentile>
         <growchartversion>NL2013</growchartversion>
         <tow>3596</tow>
         <bmi>24.24</bmi>
         <custombirthweightcentile>0</custombirthweightcentile>
     </datacentile>
-
+```
 
 ## registerBirth
 
@@ -171,6 +178,7 @@ When the gorw version is NL2012
 
 ### Input:
 
+```xml
     <birth>
         <growchartid>0000001</growchartid>
         <babydob>20140115</babydob>
@@ -178,6 +186,7 @@ When the gorw version is NL2012
         <babygender>M</babygender><!--F or M-->
         <antenataliugrdetection>N</antenataliugrdetection><!-- Y or N -->
     </birth>
+```
 
 ## registerBaby
 
@@ -187,6 +196,7 @@ When the gorw version is NL2012
 
 ### Input:
 
+```xml
     <baby>
         <growchartid>0000021</growchartid>
         <babynr>0</babynr>
@@ -197,6 +207,7 @@ When the gorw version is NL2012
         <babyname>Tom</babyname>
         <previousgrowchartid>0000014</previousgrowchartid>
     <baby>
+```
 
 ## get pdf
 
@@ -206,6 +217,7 @@ When the gorw version is NL2012
     
 ### Input:
 
+```xml
     <pdf>
         <growchartid>0000021</growchartid>
         <firstname>Luo</firstname>
@@ -220,9 +232,11 @@ When the gorw version is NL2012
         <gridlinebyweight>false</gridlinebyweight>
         <grayscale>false</grayscale>
     </pdf>
+```
 
 ### Output:
 
+```xml
     <growchart>
         <growchartid>0000021</growchartid>
         <growversion>NL2013</growversion>
@@ -240,7 +254,7 @@ When the gorw version is NL2012
         <babybirthweight>4000</babybirthweight>
         <url><![CDATA[https://www.grow-services.net/api/grow/getchartimage/?licensekey=myapikey.....]]></url>
     </growchart>
-
+```
 
 ## clear data
 
@@ -250,9 +264,11 @@ When the gorw version is NL2012
 
 ### Input:
 
+```xml
     <cleardata>
         <growchartid>0000021</growchartid>
     </cleardata>
+```
 
 ## get pregnancy
 
@@ -261,7 +277,8 @@ When the gorw version is NL2012
     /api/grow/xml/getpregnancy/0000021
     
 ### Output:
-    
+
+```xml
     <growchart>
         <growchartid>0000014</growchartid>
         <growversion>NL2013</growversion>
@@ -279,4 +296,4 @@ When the gorw version is NL2012
         <babydob>1395381715</babydob>
         <antenataliugrdetection>N</antenataliugrdetection>
     </growchart>
-    
+```

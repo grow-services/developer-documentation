@@ -160,4 +160,17 @@ The MIS uses this method to add measurements to the chart. If plotting is enable
 
 ### Output:
 
-none
+* `growchartid` The grow chart id
+* `date`: The measurement date.
+* `type`: `efw`, `fundalheight`, `birthweight`
+* `measurement`: EFW (g), fundal height (cm) or birthweight (g)
+* `uuid` The measurement uuid, it is used to remove or update this measurement.
+
+## Remove measurement
+
+### Input:
+
+* `apikey`: (see section ‘api keys’)
+* `token`: (see section ‘api keys’)
+* `growchartid` Grow chart id
+* `uuid` The measurement uuid
