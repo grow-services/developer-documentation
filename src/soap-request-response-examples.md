@@ -39,12 +39,12 @@ https://www.grow-services.net/api/grow/soap/?wsdl
 ```xml
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.grow-services.net/api/grow/soap/">
 <SOAP-ENV:Header>
-<authenticate>
- <item>
-    <key>authenticateResult</key>
-    <value>Authenticate passed</value>
- </item>
-</authenticate>
+   <authenticate>
+    <item>
+       <key>authenticateResult</key>
+       <value>Authenticate passed</value>
+    </item>
+   </authenticate>
 </SOAP-ENV:Header>
 <SOAP-ENV:Body>
 <ns1:registerPregnancyResponse>
@@ -468,6 +468,99 @@ https://www.grow-services.net/api/grow/soap/?wsdl
             <antenataliugrdetection>N</antenataliugrdetection>
          </getChartImageResult>
       </ns1:getChartImageResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+```
+
+
+### Update measurement
+
+* Request
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="https://www.grow-services.net/api/grow/soap/">
+   <soapenv:Header>
+      <soap:authenticate>
+         <licensekey>apikey</licensekey>
+         <token>apitoken</token>
+      </soap:authenticate>
+   </soapenv:Header>
+   <soapenv:Body>
+      <soap:updateMeasurement>
+         <growchartid>0000021</growchartid>
+         <date>20140101</date>
+         <type>efw</type>
+         <value>2600</value>
+         <uuid>8b1f07ba-00a2-4ddd-a39b-c5fd1a65f5ba</uuid>
+      </soap:updateMeasurement>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+```
+
+* Response
+
+```xml
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.grow-services.net/api/grow/soap/">
+   <SOAP-ENV:Header>
+      <authenticate>
+         <item>
+            <key>authenticateResult</key>
+            <value>Authenticate passed</value>
+         </item>
+      </authenticate>
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns1:updateMeasurementResponse>
+         <updateMeasurementResult>
+            <uuid>8b1f07ba-00a2-4ddd-a39b-c5fd1a65f5ba</uuid>
+            <type>efw</type>
+            <date>1388564782</date>
+            <value>2600</value>
+         </updateMeasurementResult>
+      </ns1:updateMeasurementResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+```
+
+### Remove measurement
+
+* Request
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="https://www.grow-services.net/api/grow/soap/">
+   <soapenv:Header>
+      <soap:authenticate>
+         <licensekey>apikey</licensekey>
+         <token>apitoken</token>
+      </soap:authenticate>
+   </soapenv:Header>
+   <soapenv:Body>
+      <soap:removeMeasurement>
+         <growchartid>0000021</growchartid>
+         <measurementuuid>b2b6c76b-5ea2-448a-8520-14bb56bf23c2</measurementuuid>
+      </soap:removeMeasurement>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+```
+
+* Response
+
+```xml
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.grow-services.net/api/grow/soap/">
+   <SOAP-ENV:Header>
+      <authenticate>
+         <item>
+            <key>authenticateResult</key>
+            <value>Authenticate passed</value>
+         </item>
+      </authenticate>
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns1:removeMeasurementResponse>
+         <removeMeasurementResult>OK</removeMeasurementResult>
+      </ns1:removeMeasurementResponse>
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
