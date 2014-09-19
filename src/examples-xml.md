@@ -24,7 +24,7 @@
         <edd>20140115</edd>
         <parity>0</parity>
         <ethnicity>0</ethnicity>
-        <growversion>NL2013</growchartversion> 
+        <growchartversion>NL2013</growchartversion>
         <requestdate>20131125</requestdate>
     </pregnancy>
 ```
@@ -326,4 +326,73 @@ When the gorw version is NL2012
         <babydob>1395381715</babydob>
         <antenataliugrdetection>N</antenataliugrdetection>
     </growchart>
+```
+
+## Register pregnancies (New api for registering more pregnancies one time)
+
+### URI
+
+    /api/grow/xml/registerpregnancies
+
+### Input
+
+```xml
+<pregnancies>
+    <pregnancy>
+        <maternalheight>166</maternalheight>
+        <maternalweight>66</maternalweight>
+        <ethnicity>1</ethnicity>
+        <parity>1</parity>
+        <edd>20140320</edd>
+        <growchartversion>NL2013</growchartversion>
+        <growchartid>0000021</growchartid>
+        <requestdate />
+        <birth>
+            <growchartid>0000021</growchartid>
+            <babydob>20140724</babydob>
+            <birthweight>4000</birthweight>
+            <babygender>F</babygender>
+            <antenataliugrdetection>N</antenataliugrdetection>
+            <suspected />
+        </birth>
+        <previousbabies>
+            <babynr>0</babynr>
+            <babydob>20130701</babydob>
+            <birthgestation>38.86</birthgestation>
+            <birthweight>7800</birthweight>
+            <babygender>F</babygender>
+            <babyname>Jill</babyname>
+            <previousgrowchartid>0000013</previousgrowchartid>
+        </previousbabies>
+        <measurements>
+            <measurement>
+                <date>20140206</date>
+                <type>fundalheight</type>
+                <value>32.43</value>
+            </measurement>
+            <measurement>
+                <date>20140306</date>
+                <type>efw</type>
+                <value>121</value>
+            </measurement>
+            <measurement>
+                <date>20140724</date>
+                <type>birthweight</type>
+                <value>4000</value>
+            </measurement>
+        </measurements>
+        <chart>
+            <reference>66458</reference>
+            <height>750</height>
+            <width>750</width>
+            <language>en_US</language>
+            <firstname>Jill</firstname>
+            <lastname>Test</lastname>
+            <maternaldob>20130701</maternaldob>
+            <displayp95line>false</displayp95line>
+            <gridlinebyweight>false</gridlinebyweight>
+            <grayscale>false</grayscale>
+        </chart>
+    </pregnancy>
+</pregnancies>
 ```
