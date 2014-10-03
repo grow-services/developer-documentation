@@ -19,7 +19,7 @@
 ## Previous children's birthweight centiles
 
 1. User enters previous baby details as part of routine care at booking and clicks on "Get centile" button 
-2. MIS calls `registerBaby` and sends data items - `apikey`, `token`, `growchartid`, `babynr`, `babydob`, `birthgestation`, `birthweight`, `babygender`, `babyname`, `previousgrowchartid` to web service.
+2. MIS calls `registerBaby` and sends data items - `apikey`, `token`, `growchartid`, `babynr`, `babydob`, `birthgestation`, `birthweight`, `babygender`, `babyname`, `previousgrowchartid`, `diagnosed` (optional), `suspected` (optional) to web service.
 3. No data is saved in the web service
 
 
@@ -32,12 +32,12 @@
 ## Plot estimated fetal weight
 
 1. User enters estimated fetal weight measurement (g) as part of routine care during an antenatal appointment and clicks on "Save" button
-2. MIS calls `addMeasurement` and sends data items - `apikey`, `token`, `growchartid`, `date`, `type` and `measurement` to web service. The items will be stored.
+2. MIS calls `addMeasurement` and sends data items - `apikey`, `token`, `growchartid`, `date`, `type` and `measurement` to the web service. The items will be stored.
 3. MIS calls `getPDF` and/or `getImage`, all measurements will be plotted onto the chart.
 
 ## Create customised birthweight centile
 
 1. User enters baby birth details as part of routine care following birth of the baby and clicks on "Get centile".
-2. MIS calls `registerBirth` and sends data items - `apikey`, `token`, `growchartid`, `babydob`, `birthgestation` (derived from date of birth and EDD), `birthweight`, `babygender` and `antenataliugrdetection` to web service. The items non-identifiable data items are stored.
+2. MIS calls `registerBirth` and sends data items - `apikey`, `token`, `growchartid`, `babydob`, `birthgestation` (derived from date of birth and EDD), `birthweight`, `babygender` `suspected`and `antenataliugrdetection` to web service. The items non-identifiable data items are stored.
 3. MIS calls `getData` and sends data items - `apikey`, `token`, `growchartid`
 4. The web service returns structured data containing the `custombirthweightcentile` 
