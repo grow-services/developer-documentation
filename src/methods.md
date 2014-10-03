@@ -119,7 +119,8 @@ This method is used in combination with `registerPregnancy` to register birth de
 * `babydob`
 * `babygender`
 * `babyweight`
-* `antenataliugrdetection`
+* `antenataliugrdetection` : SGA/FGR detected/diagnosed antenatally (based on one or serial ultrasound EFWs or abnormal doppler, OR clinically assessed at term leading to delivery)
+* `suspected` : Referred for suspected SGA/FGR antenatally (referred for further investigation on basis of fundal height measurements)
 
 ### Output:
 
@@ -139,7 +140,8 @@ This method is used in combination with `registerPregnancy` to register previous
 * `babygestation`
 * `birthweight`
 * `babygender`
-* `antenataliugrdetection`
+* `antenataliugrdetection`: SGA/FGR detected/diagnosed antenatally (based on one or serial ultrasound EFWs or abnormal doppler, OR clinically assessed at term leading to delivery) Optional
+* `suspected` : Referred for suspected SGA/FGR antenatally (referred for further investigation on basis of fundal height measurements) Optional
 
 ### Output:
 
