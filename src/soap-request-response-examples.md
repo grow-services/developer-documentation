@@ -81,6 +81,7 @@ https://www.grow-services.net/api/grow/soap/?wsdl
          <birthweight>40</birthweight>
          <babygender>M</babygender>
          <antenataliugrdetection>N</antenataliugrdetection>
+         <suspected>N</suspected>
       </soap:registerBirth>
    </soapenv:Body>
 </soapenv:Envelope>
