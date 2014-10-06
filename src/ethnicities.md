@@ -1,4 +1,4 @@
-When the grow version is NL2013 or NL2013B
+When the grow version is NL2013 
 
     [1] => Netherlands
     [2] => Other Eurpean
@@ -13,16 +13,6 @@ When the grow version is NL2013 or NL2013B
     [11] => Mixed
     [12] => Other
     [UNK] => Unclassified (defaults to Netherlands)
-
-When the grow version is NL2012
-
-    [1] => Netherlands
-    [2] => Dutch mixed
-    [3] => Moroccan
-    [4] => Ghanaian
-    [5] => Surinamese-Hindustani
-    [6] => Surinamese-Creole
-    [7] => Surinamese-Other
 
 When the grow version is UK2012
 
