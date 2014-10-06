@@ -30,7 +30,7 @@
 ```
 #### The ethnicity 
 
-When the grow version is NL2013 and NL2013B
+When the grow version is NL2013 or NL2013B
 
     [1] => Netherlands
     [2] => Other Eurpean
@@ -47,7 +47,7 @@ When the grow version is NL2013 and NL2013B
     [UNK] => Unclassified (defaults to Netherlands)
 
 
-When the gorw version is NL2012
+When the grow version is NL2012
 
     [1] => Netherlands
     [2] => Dutch mixed
@@ -56,6 +56,22 @@ When the gorw version is NL2012
     [5] => Surinamese-Hindustani
     [6] => Surinamese-Creole
     [7] => Surinamese-Other
+
+When the grow version is UK2013
+
+    [1] => 'European'
+    [2] => 'Indian'
+    [3] => 'Pakistani'
+    [4] => 'Bangladeshi'
+    [5] => 'African Caribbean'
+    [6] => 'African (Sub-Sahara)'
+    [7] => 'Middle Eastern'
+    [8] => 'Far East Asian'
+    [9] => 'South East Asian'
+    [10] => 'Mixed'
+    [11] => 'Other'
+    ['UNK'] => 'Unclassified'
+
 
 ### Output
 ```xml
