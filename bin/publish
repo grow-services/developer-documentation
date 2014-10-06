@@ -22,9 +22,10 @@ $content = '';
 $content .= file_get_contents($basedir . '/src/introduction.md');
 $content .= file_get_contents($basedir . '/src/service.md');
 $content .= file_get_contents($basedir . '/src/dataitems.md');
+$content .= file_get_contents($basedir . '/src/ethnicities.md');
 $content .= file_get_contents($basedir . '/src/methods.md');
 $content .= file_get_contents($basedir . '/src/workflows.md');
-$content .= file_get_contents($basedir . '/src/examples-xml.md');
+//$content .= file_get_contents($basedir . '/src/examples-xml.md');
 
 file_put_contents($builddir . '/content.md', $content);
 
