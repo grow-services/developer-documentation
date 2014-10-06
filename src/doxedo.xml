@@ -11,6 +11,7 @@
     <topic href="methods.md" />
     <topic href="workflows.md" />
     <topic href="examples-xml.md" />
+    <topic href="soap-request-response-examples.md" />
 
     <variable key="skinpath">../template/html/</variable> 
 
