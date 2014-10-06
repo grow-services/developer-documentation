@@ -31,12 +31,25 @@ Phase two development will include informing the end user of abnormal plots (i.e
 
 The latest version of this document, and further developer information is available from the following website: 
 
-* [http://developer.grow-services.net/](http://developer.grow-services.net/)
+[http://developer.grow-services.net/](http://developer.grow-services.net/)
 
 This document itself is managed as an open source project on Github. Improvements, extensions and corrections are encouraged. We welcome forks and pull-requests on the following project url:
 
 * [http://github.com/grow-services/developer-documentation](http://github.com/grow-services/developer-documentation)
 
+## Request/Response examples
+
+Please refer to our documentation github repository for request/response examples for the SOAP and XML APIs.
+
+* [http://github.com/grow-services/developer-documentation](http://github.com/grow-services/developer-documentation)
+* 
+## Official programming libraries 
+
+In an effort to simplify the integration of GROW-Services into your application, several programming libraries are available for various programming languages.
+
+For the most current list, please refer to the developer website.
+
+* [http://developer.grow-services.net/](http://developer.grow-services.net/)
 
 ## Legal
 
