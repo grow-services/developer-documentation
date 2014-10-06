@@ -24,7 +24,7 @@ When the grow version is NL2012
     [6] => Surinamese-Creole
     [7] => Surinamese-Other
 
-When the grow version is UK2013
+When the grow version is UK2012
 
     [1] => 'European'
     [2] => 'Indian'
