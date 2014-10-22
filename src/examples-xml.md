@@ -14,6 +14,8 @@
     
     /api/grow/xml/registerpregnancy/?licensekey=myapikey&token=demotoken&growchartid=0000001
 
+### Method: POST
+
 ### Input
 ```xml
     <pregnancy>
@@ -81,6 +83,8 @@ When the grow version is UK2012
 ### URI
     
     /api/grow/xml/addmeasurement/?licensekey=myapikey&token=demotoken
+
+### Method: POST
 
 ### Input
 ```xml
@@ -334,7 +338,7 @@ When the grow version is UK2012
     </growchart>
 ```
 
-## Register pregnancies (New api for registering more pregnancies one time)
+## Register pregnancies (New api for registering more pregnancies at once)
 
 ### URI
 
