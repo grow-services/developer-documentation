@@ -21,9 +21,9 @@ Historically, the Perinatal Institute has provided tools for assessment of custo
 
 Both have been provided by a WebApp or WinApp.
 
-However, as part of the new Growth Assessment Protocols (GAP) programme, the software options have now expanded to include a web service for local Trust's Maternity Information Systems (MIS) to link to. In addition, the software has now expanded to include data collection and reporting of rates of intrauterine growth restriction (birthweight below the tenth customised centile) and their antenatal detection rates.
+However, as part of the new Growth Assessment Protocols (GAP) programme, the software options have now expanded to include a web service for local Trust's Maternity Information Systems (MIS) to link to. In addition, the software has now expanded to include data collection and reporting of rates of Small for gestational age/fetal growth restriction (birthweight below the tenth customised centile) and their antenatal detection rates.
 
-The GROW API will produce the customised growth charts and birth weight centiles as part of the routine data entry for clinicians, reducing the need for double entry of data. The web service will support data collection and reporting of IUGR rates and antenatal detection rates and where required, automated plotting of fundal height and estimated fetal weight measurements. This will eliminate human error in plotting.
+The GROW API will produce the customised growth charts and birth weight centiles as part of the routine data entry for clinicians, reducing the need for double entry of data. The web service will support data collection and reporting of SGA/FGR rates and antenatal detection rates and where required, automated plotting of fundal height and estimated fetal weight measurements. This will eliminate human error in plotting.
 
 Phase two development will include informing the end user of abnormal plots (i.e. static, slow or accelerated growth) in order to trigger appropriate referral for further investigation.
 
