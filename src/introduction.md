@@ -27,6 +27,18 @@ The GROW API will produce the customised growth charts and birth weight centiles
 
 Phase two development will include informing the end user of abnormal plots (i.e. static, slow or accelerated growth) in order to trigger appropriate referral for further investigation.
 
+Definitions:
+
+SGA is defined as a measurement below the 10th customised centile (of fundal height, estimated weight or birthweight). Some of these babies are normal (constutionally small) but if the cut-off limit is customised, most (but not all) constitutional variation has been adjusted for and these babies are pathologically small (=FGR, fetal growth restricted). 
+
+FGR or IUGR is the term used for babies that have slow or no growth according to serial fundal height or ultrasound (EFW) measurements (regardless of whether they are already below the tenth centile or not), and/or who have had one or more abnormal Doppler flow measurements. 
+
+Antenatal suspicion of SGA or FGR leading to referral for further investigation is usually on the basis of a fundal height measurement below the 10th centile line, or sequential measurements suggesting no or slow growth. 
+
+Antenatal detection / diagnosis of SGA indicates an ultrasound estimated fetal weight (EFW) below the tenth centile line, or sequential EFWs with slow or no growth, and/or one or more abnormal Dopplers
+
+Note: We have no way to determine how many babies in total are FGR at birth, and hence what proportion of them are recognised to be FGR antenatally. Therefore, the proxy denominator used for 'antenatal detection' is all babies that are SGA at birth, defined as being below the tenth customised birthweight-for-gestation centile. 
+
 ## Versioning and further information
 
 The latest version of this document, and further developer information is available from the following website: 
