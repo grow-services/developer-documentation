@@ -49,20 +49,29 @@ When the grow version is NL2013
     [UNK] => Unclassified (defaults to Netherlands)
 
 
-When the grow version is UK2012
+When the grow version is UK2014 (MRX04b)
 
-    [1] => 'European'
-    [2] => 'Indian'
-    [3] => 'Pakistani'
-    [4] => 'Bangladeshi'
-    [5] => 'African Caribbean'
-    [6] => 'African (Sub-Sahara)'
-    [7] => 'Middle Eastern'
-    [8] => 'Far East Asian'
-    [9] => 'South East Asian'
-    [10] => 'Mixed'
-    [11] => 'Other'
-    ['UNK'] => 'Unclassified'
+    [1]: British European
+    [2]: East European
+    [3]: Irish European
+    [4] : North European
+    [5]: South European
+    [6]: West European
+    [7]: North African
+    [8]: Sub-Sahara African
+    [9]: Middle Eastern
+    [10]: Bangladeshi
+    [11]: Indian
+    [12]: Pakistani
+    [13]: Chinese
+    [14]: Other Far East
+    [15]: South East Asian
+    [16]: Caribbean
+    [17]: Mixed African-European
+    [18]: Mixed Asian-European
+    [19]: Mixed Caribbean-European
+    [20]: Other
+    [21]: Unclassified
 
 
 ### Output
