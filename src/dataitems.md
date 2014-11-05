@@ -27,6 +27,7 @@ The following data items are used by this service:
 * **birthweight**: Birth weight (at birth)
 * **babygender**: Sex (at birth)
 * **antenataliugrdetection**: Antenatal detection of IUGR (at birth)
+* **antenatalreferralforsga**: Antenatal referral for suspicion of IUGR/SGA (at birth)
 
 ## Input temporary data for image or PDF (not stored)
 
