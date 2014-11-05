@@ -73,7 +73,28 @@ When the grow version is UK2014 (MRX04b)
     [20]: Other
     [21]: Unclassified
 
+NZ2014 (New Zealand NAnd)
 
+    [1]: NZ European
+    [2]: Maori
+    [3]: Tongan
+    [4]: Chinese
+    [5]: Indian
+    [6]: African
+    [7]: Other Asianc
+    [8]: Cook Island Maori
+    [9]: Fijian
+    [10]: Middle Eastern
+    [11]: Niuean
+    [12]: Other European
+    [13]: Other Pacific Islander
+    [14]: South East Asian
+    [15]: Samoan
+    [16]: Latin American
+    [17]: Other
+    [18]: Unclassified
+    
+    
 ### Output
 ```xml
     <growchart>
