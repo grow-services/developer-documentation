@@ -50,7 +50,7 @@ This is simple API where parameters are submitted as HTTP GET and/or POST variab
 
 Endpoint:
 
-* [https://www.grow-services.net/api/grow/rest/](https://www.grow-services.net/api/grow/rest/)
+* [https://www.grow-services.net/api/grow/v3/rest/](https://www.grow-services.net/api/grow/v3/rest/)
 
 The url is post-fixed with the methodname in all lowercase and a final slash.
 
@@ -62,7 +62,7 @@ This is simple API where parameters are submitted in structured XML fragments.
 
 Endpoint:
 
-* [https://www.grow-services.net/api/grow/xml/](https://www.grow-services.net/api/grow/xml/)
+* [https://www.grow-services.net/api/grow/v3/xml/](https://www.grow-services.net/api/grow/v3/xml/)
 
 The url is post-fixed with the methodname in all lowercase and a final slash.
 
@@ -74,6 +74,6 @@ This API allows you to interact with the service through a SOAP interface. A WSD
 
 Endpoint:
 
-* WSDL: [https://www.grow-services.net/api/grow/soap/?wsdl](https://www.grow-services.net/api/grow/soap/?wsdl)
-* Service: [https://www.grow-services.net/api/grow/soap/](https://www.grow-services.net/api/grow/soap/)
+* WSDL: [https://www.grow-services.net/api/grow/v3/soap/?wsdl](https://www.grow-services.net/api/grow/v3/soap/?wsdl)
+* Service: [https://www.grow-services.net/api/grow/v3/soap/](https://www.grow-services.net/api/grow/v3/soap/)
 
