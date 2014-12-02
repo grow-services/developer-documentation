@@ -18,6 +18,13 @@ If you have any questions about our change-process, please don’t hesitate to c
 
 ## Changes by date
 
+### 01/12/2014 The API v3 online (improvement)
+
+Improve the speed to store the data. reduce the reqest times.
+Add a new way to register pregnancy, can register more pregnancies once. and the response can get all information of this pregnancy.
+More detail please look at this example.
+[Example][1]
+
 ### 15/08/2014 SOAP/v1 (improvement)
 
 As a further improvement on the last SOAP/v1 change, we’re now explicitly defining the complex types instead of the `soap-enc:Array`. This allows code class generators to understand the WSDL even better.
@@ -34,4 +41,4 @@ This requires the calling application to keep track of measurement id’s intern
 As a simpler integration, it is still possible to just clear all data, and re-register all measurements before generating a chart.
 
 
-
+[1]: https://github.com/grow-services/developer-documentation/blob/master/src/examples-xml.md#register-pregnancies-new-api-for-registering-more-pregnancies-at-once  "Register pregnancies example"
