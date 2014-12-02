@@ -20,9 +20,9 @@ If you have any questions about our change-process, please don’t hesitate to c
 
 ### 01/12/2014 The API v3 online (improvement)
 
-Improve the speed to store the data. reduce the reqest times.
-Add a new way to register pregnancy, can register more pregnancies once. and the response can get all information of this pregnancy.
-More detail please look at this example.
+Improved the speed to store the data. reduced the request times.
+Added a new way to register a pregnancy, you can now register more pregnancies at once.
+The response can get all information of this pregnancy. Please look at this example for more detail:
 [Example][1]
 
 ### 15/08/2014 SOAP/v1 (improvement)
