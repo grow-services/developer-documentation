@@ -12,7 +12,7 @@
 
 ### URI
     
-    /api/grow/xml/registerpregnancy/?licensekey=myapikey&token=demotoken&growchartid=0000001
+    /api/grow/v3/xml/registerpregnancy/?licensekey=myapikey&token=demotoken&growchartid=0000001
 
 ### Method: POST
 
@@ -49,22 +49,52 @@ When the grow version is NL2013
     [UNK] => Unclassified (defaults to Netherlands)
 
 
-When the grow version is UK2012
+When the grow version is UK2014 (MRX04b)
 
-    [1] => 'European'
-    [2] => 'Indian'
-    [3] => 'Pakistani'
-    [4] => 'Bangladeshi'
-    [5] => 'African Caribbean'
-    [6] => 'African (Sub-Sahara)'
-    [7] => 'Middle Eastern'
-    [8] => 'Far East Asian'
-    [9] => 'South East Asian'
-    [10] => 'Mixed'
-    [11] => 'Other'
-    ['UNK'] => 'Unclassified'
+    [1]: British European
+    [2]: East European
+    [3]: Irish European
+    [4] : North European
+    [5]: South European
+    [6]: West European
+    [7]: North African
+    [8]: Sub-Sahara African
+    [9]: Middle Eastern
+    [10]: Bangladeshi
+    [11]: Indian
+    [12]: Pakistani
+    [13]: Chinese
+    [14]: Other Far East
+    [15]: South East Asian
+    [16]: Caribbean
+    [17]: Mixed African-European
+    [18]: Mixed Asian-European
+    [19]: Mixed Caribbean-European
+    [20]: Other
+    [21]: Unclassified
 
+NZ2014 (New Zealand NAnd)
 
+    [1]: NZ European
+    [2]: Maori
+    [3]: Tongan
+    [4]: Chinese
+    [5]: Indian
+    [6]: African
+    [7]: Other Asianc
+    [8]: Cook Island Maori
+    [9]: Fijian
+    [10]: Middle Eastern
+    [11]: Niuean
+    [12]: Other European
+    [13]: Other Pacific Islander
+    [14]: South East Asian
+    [15]: Samoan
+    [16]: Latin American
+    [17]: Other
+    [18]: Unclassified
+    
+    
 ### Output
 ```xml
     <growchart>
@@ -82,7 +112,7 @@ When the grow version is UK2012
 
 ### URI
     
-    /api/grow/xml/addmeasurement/?licensekey=myapikey&token=demotoken
+    /api/grow/v3/xml/addmeasurement/?licensekey=myapikey&token=demotoken
 
 ### Method: POST
 
@@ -112,7 +142,7 @@ When the grow version is UK2012
 
 ### URI
 
-    /api/grow/xml/pregnancy/{growchartid}/measurement/{measurementuuid}?licensekey=myapikey&token=demotoken
+    /api/grow/v3/xml/pregnancy/{growchartid}/measurement/{measurementuuid}?licensekey=myapikey&token=demotoken
 
 ### Method: DELETE
 
@@ -120,7 +150,7 @@ When the grow version is UK2012
 
 ### URI
 
-    /api/grow/xml/pregnancy/{growchartid}/measurement/{measurementuuid}?licensekey=myapikey&token=demotoken
+    /api/grow/v3/xml/pregnancy/{growchartid}/measurement/{measurementuuid}?licensekey=myapikey&token=demotoken
    
 ### Method: PUT
 
@@ -140,7 +170,7 @@ When the grow version is UK2012
 
 ### URI
     
-    /api/grow/xml/getchartimage/?licensekey=myapikey&token=demotoken
+    /api/grow/v3/xml/getchartimage/?licensekey=myapikey&token=demotoken
 
 ### Input:
 ```xml
@@ -176,7 +206,7 @@ When the grow version is UK2012
         <grid_line_by_weight>false</grid_line_by_weight>
         <gray_scale>false</gray_scale>
         <url>
-            <![CDATA[https://www.grow-services.net/api/grow/getchartimage/?licensekey=myapikey&.....&format=png]]>
+            <![CDATA[https://www.grow-services.net/api/grow/v3/getchartimage/?licensekey=myapikey&.....&format=png]]>
         </url>
     </growchart>
 ```
@@ -185,7 +215,7 @@ When the grow version is UK2012
 
 ### URI
     
-    /api/grow/xml/getdata/[?licensekey=myapikey&token=demotoken&growchartid=0000001]
+    /api/grow/v3/xml/getdata/[?licensekey=myapikey&token=demotoken&growchartid=0000001]
     
 ### Input:
 ```xml
@@ -213,7 +243,7 @@ When the grow version is UK2012
 
 ### URI
     
-    /api/grow/xml/registerbirth/?licensekey=myapikey&token=demotoken
+    /api/grow/v3/xml/registerbirth/?licensekey=myapikey&token=demotoken
 
 
 ### Input:
@@ -232,7 +262,7 @@ When the grow version is UK2012
 
 ### URI
     
-    /api/grow/xml/registerbaby/?licensekey=myapikey&token=demotoken
+    /api/grow/v3/xml/registerbaby/?licensekey=myapikey&token=demotoken
 
 ### Input:
 
@@ -253,7 +283,7 @@ When the grow version is UK2012
 
 ### URI
 
-    /api/grow/xml/getpdf/?licensekey=myapikey&token=demotoken
+    /api/grow/v3/xml/getpdf/?licensekey=myapikey&token=demotoken
     
 ### Input:
 
@@ -292,7 +322,7 @@ When the grow version is UK2012
         <babygender>M</babygender>
         <babygestation>41</babygestation>
         <babybirthweight>4000</babybirthweight>
-        <url><![CDATA[https://www.grow-services.net/api/grow/getchartimage/?licensekey=myapikey.....]]></url>
+        <url><![CDATA[https://www.grow-services.net/api/grow/v3/getchartimage/?licensekey=myapikey.....]]></url>
     </growchart>
 ```
 
@@ -300,7 +330,7 @@ When the grow version is UK2012
 
 ### URI
 
-    /api/grow/xml/cleardata/
+    /api/grow/v3/xml/cleardata/
 
 ### Input:
 
@@ -314,7 +344,7 @@ When the grow version is UK2012
 
 ### URI
 
-    /api/grow/xml/getpregnancy/0000021
+    /api/grow/v3/xml/getpregnancy/0000021
     
 ### Output:
 
@@ -342,7 +372,7 @@ When the grow version is UK2012
 
 ### URI
 
-    /api/grow/xml/registerpregnancies
+    /api/grow/v3/xml/registerpregnancies
 
 ### Input
 

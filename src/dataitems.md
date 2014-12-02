@@ -26,7 +26,8 @@ The following data items are used by this service:
 * **birthgestation**: Gestation (at birth) [derived from date of birth and EDD]
 * **birthweight**: Birth weight (at birth)
 * **babygender**: Sex (at birth)
-* **antenataliugrdetection**: Antenatal detection of IUGR (at birth)
+* **antenataliugrdetection**: Antenatal detection of SGA/FGR (at birth)
+* **suspicion**: Referred for suspected SGA/FGR antenatally (referred for further investigation on basis of fundal height measurements) (at birth)
 
 ## Input temporary data for image or PDF (not stored)
 
