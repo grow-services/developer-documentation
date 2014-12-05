@@ -8,6 +8,8 @@ This section of the document describes the available methods in the API. This in
 * `getChartImage`
 * `getData`
 * `registerBirth`
+* `registerBaby`
+* `clearData`
 
 ## registerPregnancy
 
@@ -36,7 +38,7 @@ If any changes are made to the data items that help produce the customised growt
 * `ethnicity`
 * `parity`
 * `edd`
-* `requestdate`
+* `requestdate` (optional default is the current time)
 
 ### Output:
 
@@ -61,6 +63,7 @@ This method is used in combination with `registerPregnancy` when the application
 * `growchartversion`
 * `bmi`
 * `tow`
+* `custombirthweightcentile`: The centile data
 
 ## getPdf
 
@@ -72,10 +75,10 @@ This method is used by the application to generate a printable version of the cu
 * `token`: (see section ‘api keys’)
 * `firstname`
 * `surname`
-* `maternaldob`
+* `maternaldob`: The mather's birthday and the format is 'YYYY-MM-DD'
 * `maternalreference`
 * `babyname`
-* `babygender`
+* `babygender`: The valud should be 'M' or 'F'
 * `babygestation`
 * `babybirthweight`
 
@@ -116,8 +119,8 @@ This method is used in combination with `registerPregnancy` to register birth de
 * `apikey`: (see section ‘api keys’)
 * `token`: (see section ‘api keys’)
 * `growchartid`
-* `babydob`
-* `babygender`
+* `babydob`: The format is 'YYYY-MM-DD'
+* `babygender`: Use 'M' or 'F'
 * `babyweight`
 * `antenataliugrdetection` : SGA/FGR detected/diagnosed antenatally (based on one or serial ultrasound EFWs or abnormal doppler, OR clinically assessed at term leading to delivery)
 * `suspected` : Referred for suspected SGA/FGR antenatally (referred for further investigation on basis of fundal height measurements)
@@ -135,8 +138,8 @@ This method is used in combination with `registerPregnancy` to register previous
 * `apikey`: (see section ‘api keys’)
 * `token`: (see section ‘api keys’)
 * `growchartid`
-* `babynr`
-* `babydob`
+* `babynr`: This is the baby No. you can set it for order the baby
+* `babydob`: The baby's birthday and the format is 'YYYY-MM-DD'
 * `babygestation`
 * `birthweight`
 * `babygender`
@@ -176,3 +179,32 @@ The MIS uses this method to add measurements to the chart. If plotting is enable
 * `token`: (see section ‘api keys’)
 * `growchartid` Grow chart id
 * `uuid` The measurement uuid
+
+## registerBaby
+
+The MIS uses this method to add baby to the chart.
+
+### Input:
+
+* `apikey`: (see section ‘api keys’)
+* `token`: (see section ‘api keys’)
+* `growchartid`: Grow chart id
+* `previousgrowchartid`: The grow char id that the baby birth
+* `babynr`: (optional) This is the baby No. you can set it for order the baby
+* `babydob`: The babydob should be the YYYY-MM-DD format
+* `birthgestation`: The gestation
+* `birthweight`
+* `babygender`:
+* `babyname`
+
+## clearData
+
+The MIS uses this method to clear all the measurement
+and baby data that had added with same growchartid
+
+### Input
+
+* `apikey`: (see section ‘api keys’)
+* `token`: (see section ‘api keys’)
+* `growchartid`: Grow chart id
+
