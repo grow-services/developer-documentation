@@ -123,7 +123,7 @@ https://www.grow-services.net/api/grow/soap/?wsdl
       <soap:registerBaby>
          <growchartid>0000021</growchartid>
          <babynr>0</babynr><!-- This is the baby No. you can set it for order the baby -->
-         <babydob>20120115</babydob><!-- The babydob should be the YYYY-MM-DD format -->
+         <babydob>20120115</babydob><!-- The babydob should be the yyyyMMdd format -->
          <birthgestation>41</birthgestation>
          <birthweight>4000</birthweight>
          <babygender>M</babygender>

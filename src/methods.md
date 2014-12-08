@@ -75,7 +75,7 @@ This method is used by the application to generate a printable version of the cu
 * `token`: (see section ‘api keys’)
 * `firstname`
 * `surname`
-* `maternaldob`: The mather's birthday and the format is 'YYYY-MM-DD'
+* `maternaldob`: The mather's birthday and the format is `yyyyMMdd`
 * `maternalreference`
 * `babyname`
 * `babygender`: The valud should be 'M' or 'F'
@@ -119,7 +119,7 @@ This method is used in combination with `registerPregnancy` to register birth de
 * `apikey`: (see section ‘api keys’)
 * `token`: (see section ‘api keys’)
 * `growchartid`
-* `babydob`: The format is 'YYYY-MM-DD'
+* `babydob`: The format is `yyyyMMdd`
 * `babygender`: Use 'M' or 'F'
 * `babyweight`
 * `antenataliugrdetection` : SGA/FGR detected/diagnosed antenatally (based on one or serial ultrasound EFWs or abnormal doppler, OR clinically assessed at term leading to delivery)
@@ -139,7 +139,7 @@ This method is used in combination with `registerPregnancy` to register previous
 * `token`: (see section ‘api keys’)
 * `growchartid`
 * `babynr`: This is the baby No. you can set it for order the baby
-* `babydob`: The baby's birthday and the format is 'YYYY-MM-DD'
+* `babydob`: The baby's birthday and the format is `yyyyMMdd`
 * `babygestation`
 * `birthweight`
 * `babygender`
@@ -159,7 +159,7 @@ The MIS uses this method to add measurements to the chart. If plotting is enable
 * `apikey`: (see section ‘api keys’)
 * `token`: (see section ‘api keys’)
 * `growchartid`
-* `date`: Format: YYYYMMDD
+* `date`: Format: `yyyyMMdd`
 * `type`: `efw`, `fundalheight`, `birthweight`
 * `measurement`: EFW (g), fundal height (cm) or birthweight (g)
 
@@ -191,7 +191,7 @@ The MIS uses this method to add baby to the chart.
 * `growchartid`: Grow chart id
 * `previousgrowchartid`: The grow char id that the baby birth
 * `babynr`: (optional) This is the baby No. you can set it for order the baby
-* `babydob`: The babydob should be the YYYY-MM-DD format
+* `babydob`: The babydob should be the `yyyyMMdd` format
 * `birthgestation`: The gestation
 * `birthweight`
 * `babygender`:
