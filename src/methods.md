@@ -127,7 +127,10 @@ This method is used in combination with `registerPregnancy` to register birth de
 
 ### Output:
 
-* nothing
+* `growchartversion`
+* `bmi`
+* `tow`
+* `custombirthweightcentile`: The centile data
 
 ## registerBaby
 
