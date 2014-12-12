@@ -13,13 +13,13 @@ This section of the document describes the available methods in the API. This in
 
 ## registerPregnancy
 
-This method is used to register a new pregnancy, set the basic details, and establish a unique `growchartid`. `registerPregnancy` is usually followed up by other methods such as `getPdf`, `getData` and/or `getChartImage`
+This method is used to register a new pregnancy, set the basic details and establish an unique `growchartid`. `registerPregnancy` is usually followed up by other methods such as `getPdf`, `getData` and/or `getChartImage`.
 
 If the MIS can generate a unique reference for this pregnancy, it can be passed in the `growchartid` field. The service will use that reference to identify the chart in other calls. 
 
-If the MIS does not provide a unique reference, you can leave the `growchartid` field empty. The service will generate a unique id, and return it in the response for the MIS to store for future methods.
+If the MIS does not provide a unique reference, you can leave the `growchartid` field empty. The service will generate an unique id and return it in the response for the MIS to store for future methods.
 
-The growchartversion identifies the set of co-efficients used for this pregnancy, i.e. `UK2013`, `NL2012` or `NL2013`. The field is optional, and if omitted uses the default *current* growchartversion for the country of the caller. It is recommended to omit this field, and let the service automatically select the current growversion. The field is only intended for re-creating legacy charts.
+The growchartversion identifies the set of co-efficients used for this pregnancy, i.e. `UK2014`, `NZ2014` or `NL2013`. The field is optional, and if omitted it uses `NL2013` or use the version of a known `growchartid`. If you want to use a different growchartversion you have to set this parameter. It is not possible for the api to return the latest version of a country specific version because it's possible the list of ethnicities has been updated in this newer version.
 
 The `ethnicity` is specified in the scope of the growchartversion.
 
@@ -75,10 +75,10 @@ This method is used by the application to generate a printable version of the cu
 * `token`: (see section ‘api keys’)
 * `firstname`
 * `surname`
-* `maternaldob`: The mather's birthday and the format is `yyyyMMdd`
+* `maternaldob`: The mother's birthday and the format is `yyyyMMdd`
 * `maternalreference`
 * `babyname`
-* `babygender`: The valud should be 'M' or 'F'
+* `babygender`: Use 'M' or 'F'
 * `babygestation`
 * `babybirthweight`
 
@@ -88,9 +88,9 @@ This method is used by the application to generate a printable version of the cu
 
 ## getChartImage
 
-This method is used in combination with `registerPregnancy` when a Trust needs to integrate the GROW Chart image into the MIS. It will include any previously reported measurements (efw, fundalheight, birthweight) as plot points
+This method is used in combination with `registerPregnancy` when a Trust needs to integrate the GROW Chart image into the MIS. It will include any previously reported measurements (efw, fundalheight, birthweight) as plot points.
 
-The `firstname`, `lastname`, `maternaldob` fields is personally identifiable data, and is therefore optional. If provided, it will be embedded in the generated image after which it will be discarded. 
+The `firstname`, `lastname`, `maternaldob` fields is personally identifiable data and is therefore optional. If provided, it will be embedded in the generated image after which it will be discarded. 
 
 ### Input:
 
@@ -112,7 +112,7 @@ The `firstname`, `lastname`, `maternaldob` fields is personally identifiable dat
 
 ## registerBirth
 
-This method is used in combination with `registerPregnancy` to register birth details of the pregnancy related to the requested `growchartid`. It is used to determine a customised birthweight centile, and keep track of antenataliugrdetection rates.
+This method is used in combination with `registerPregnancy` to register birth details of the pregnancy related to the requested `growchartid`. It is used to determine a customised birthweight centile, and keep track of antenatal IUGR detection rates.
 
 ### Input:
 
@@ -141,8 +141,8 @@ This method is used in combination with `registerPregnancy` to register previous
 * `apikey`: (see section ‘api keys’)
 * `token`: (see section ‘api keys’)
 * `growchartid`
-* `babynr`: This is the baby No. you can set it for order the baby
-* `babydob`: The baby's birthday and the format is `yyyyMMdd`
+* `babynr`: Use this to order the babies chronologically
+* `babydob`: The baby's birthday, format is `yyyyMMdd`
 * `babygestation`
 * `birthweight`
 * `babygender`
@@ -155,7 +155,7 @@ This method is used in combination with `registerPregnancy` to register previous
 
 ## addMeasurement
 
-The MIS uses this method to add measurements to the chart. If plotting is enabled, these will be displayed to the image.
+The MIS uses this method to add measurements to the chart. These will be displayed in the image.
 
 ### Input:
 
@@ -192,8 +192,8 @@ The MIS uses this method to add baby to the chart.
 * `apikey`: (see section ‘api keys’)
 * `token`: (see section ‘api keys’)
 * `growchartid`: Grow chart id
-* `previousgrowchartid`: The grow char id that the baby birth
-* `babynr`: (optional) This is the baby No. you can set it for order the baby
+* `previousgrowchartid`: The grow chart id of this baby
+* `babynr`: (optional) Use this to order the babies chronologically
 * `babydob`: The babydob should be the `yyyyMMdd` format
 * `birthgestation`: The gestation
 * `birthweight`
@@ -202,8 +202,7 @@ The MIS uses this method to add baby to the chart.
 
 ## clearData
 
-The MIS uses this method to clear all the measurement
-and baby data that had added with same growchartid
+The MIS uses this method to clear all the measurement and baby data that is added with same growchartid
 
 ### Input
 
