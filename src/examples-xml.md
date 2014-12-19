@@ -110,32 +110,58 @@ NZ2014 (New Zealand NAnd)
 
 ## addMeasurement
 
+In this way you can add more then one measurements.
+
 ### URI
-    
+
     /api/grow/v3/xml/addmeasurement/?licensekey=myapikey&token=demotoken
 
 ### Method: POST
 
 ### Input
 ```xml
-    <measurements growchartid="0000001">
-        <measurement>
-            <type>birthweight</type>
-            <date>20121011</date>
-            <value>2600</value>
-        </measurement>
-        <measurement>
-            <type>fundalheight</type>
-            <date>20121111</date>
-            <value>30</value>
-        </measurement>
-        <measurement>
-            <type>efw</type>
-            <date>20121111</date>
-            <value>1700</value>
-        </measurement>
-        ...
-    </measurements>
+<measurements growchartid="0000001">
+    <measurement>
+        <type>birthweight</type>
+        <date>20121011</date>
+        <value>2600</value>
+    </measurement>
+    <measurement>
+        <type>fundalheight</type>
+        <date>20121111</date>
+        <value>30</value>
+    </measurement>
+    <measurement>
+        <type>efw</type>
+        <date>20121111</date>
+        <value>1700</value>
+    </measurement>
+</measurements>
+```
+
+### Output
+
+```xml
+<measurements>
+    <measurement>
+        <uuid>a92d3ef9-9f7b-4c04-8725-c1f2140ef899</uuid>
+        <type>birthweight</type>
+        <date>20121011</date>
+        <value>2600</value>
+    </measurement>
+    <measurement>
+        <uuid>e00ac45d-20c9-4c0b-a83a-25e5acacbe60</uuid>
+        <type>fundalheight</type>
+        <date>20121111</date>
+        <value>30</value>
+    </measurement>
+    <measurement>
+    <uuid>3b0a7737-851a-4608-b22f-ced9c203812a</uuid>
+        <type>efw</type>
+        <date>20121111</date>
+        <value>1700</value>
+    </measurement>
+</measurements>
 ```
 
 ## Remove measurement
@@ -157,13 +183,13 @@ NZ2014 (New Zealand NAnd)
 ### Input
 
 ```xml
-    <measurements>
-        <measurement>
-            <type>birthweight</type>
-            <date>20121011</date>
-            <value>2600</value>
-        </measurement>
-    </measurements>
+<measurements>
+    <measurement>
+        <type>birthweight</type>
+        <date>20121011</date>
+        <value>2600</value>
+    </measurement>
+</measurements>
 ```
 
 ## getChartImage
