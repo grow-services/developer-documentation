@@ -20,10 +20,9 @@ If you have any questions about our change-process, please don’t hesitate to c
 
 ### 01/12/2014 The API v3 online (improvement)
 
-Improved the speed to store the data. reduced the request times.
-Added a new way to register a pregnancy, you can now register more pregnancies at once.
-The response can get all information of this pregnancy. Please look at this example for more detail:
+With the release of v3 of the API, the base url has been changed from https://www.grow-services.net/api/grow/ to https://www.grow-services.net/api/grow/v3/. This new version improves the speed to store the data and will reduce the request times. Also a new way to register a pregnancy has been added. You can now register more pregnancies at once using registerPregnancies. The response can get all information of this pregnancy. Please look at this example for more detail:
 [Example][1]
+The new API is backwards compatible with the previous version.
 
 ### 15/08/2014 SOAP/v1 (improvement)
 
